@@ -27,6 +27,16 @@ class BasicCalculatorTest {
 
     @Test
     void resta() {
+        // Arrange
+        Long number1 = 2L;
+        Long number2 = 1L;
+        Long expectedValue=1L;
+
+        // Act
+        long result= basicCalculator.resta(number1, number2);
+
+        // Assert
+        assertEquals(expectedValue, result);
     }
 
     @Test

@@ -27,11 +27,10 @@ public class BasicCalculator {
     public Long division(Long number1, Long number2) {
         logger.info("Dividiendo {} +{}", number1, number2);
         if (number2 < 1) {
-            System.out.println("No se puede dividir entre cero");
-            return Long.valueOf(0);
-        } else {
-            return number1 / number2;
+          throw new IllegalArgumentException("No se puede dividir entre 0");
         }
+            return number1 / number2;
+
 
 
     }
