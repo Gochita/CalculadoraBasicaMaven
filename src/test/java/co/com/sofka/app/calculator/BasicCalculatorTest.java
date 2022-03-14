@@ -26,7 +26,9 @@ class BasicCalculatorTest {
     }
 
     @Test
+    @DisplayName("Testing resta 2-1=1")
     void resta() {
+
         // Arrange
         Long number1 = 2L;
         Long number2 = 1L;
@@ -40,6 +42,7 @@ class BasicCalculatorTest {
     }
 
     @Test
+    @DisplayName("Testing division 4/2=2")
     void division() {
 
         // Arrange
@@ -55,6 +58,7 @@ class BasicCalculatorTest {
     }
 
     @Test
+    @DisplayName("Testing multiplicacion ---> 4*2=8")
     void multiplicacion() {
 
         // Arrange
