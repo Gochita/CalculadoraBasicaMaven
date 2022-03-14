@@ -41,6 +41,17 @@ class BasicCalculatorTest {
 
     @Test
     void division() {
+
+        // Arrange
+        Long number1 = 4L;
+        Long number2 = 2L;
+        Long expectedValue=2L;
+
+        // Act
+        long result= basicCalculator.division(number1, number2);
+
+        // Assert
+        assertEquals(expectedValue, result);
     }
 
     @Test

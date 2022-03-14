@@ -19,13 +19,13 @@ public class BasicCalculator {
 
 
     public Long resta(Long number1, Long number2) {
-        logger.info("Restando {} +{}", number1, number2);
+        logger.info("Restando {} - {}", number1, number2);
 
         return number1 - number2;
     }
 
     public Long division(Long number1, Long number2) {
-        logger.info("Dividiendo {} +{}", number1, number2);
+        logger.info("Dividiendo {} / {}", number1, number2);
         if (number2 < 1) {
           throw new IllegalArgumentException("No se puede dividir entre 0");
         }
@@ -35,7 +35,7 @@ public class BasicCalculator {
 
     }
     public Long multiplicacion(Long number1, Long number2) {
-        logger.info("Multiplicando {} +{}", number1, number2);
+        logger.info("Multiplicando {} * {}", number1, number2);
 
         return number1 * number2;
     }
