@@ -56,5 +56,16 @@ class BasicCalculatorTest {
 
     @Test
     void multiplicacion() {
+
+        // Arrange
+        Long number1 = 4L;
+        Long number2 = 2L;
+        Long expectedValue=8L;
+
+        // Act
+        long result= basicCalculator.multiplicacion(number1, number2);
+
+        // Assert
+        assertEquals(expectedValue, result);
     }
 }
